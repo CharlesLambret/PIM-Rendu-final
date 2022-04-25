@@ -1,0 +1,53 @@
+/* ---------------------------------------------- Loader ------------------------------------------*/
+#container{
+  display:flex;
+  flex-direction: column;
+  width: 30vw;
+  height:70vh;
+  margin-left:35vw;
+  justify-content:center;
+  align-items:center;
+  margin-top:15vh;
+}
+.Logoadora{
+    width : 20vw; 
+    animation : grow 1.5s linear infinite;
+    align-self:center;
+}
+@keyframes grow {
+  0% { transform : scale(1)}
+  50% { transform : scale(1.03)}
+  100% { transform : scale(1)}
+}
+#loader{
+    border: 1vw solid #f3f3f3; /* Light grey */
+    border-top: 1vw solid #EEAB57; /* Blue */
+    border-radius: 100%;
+    width: 5vw;
+    height:5vw;
+    animation: spin 1.5s linear infinite;
+    margin-top:-3vh;
+    
+    
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @media(max-width:800px){
+    #container{
+      width:50vw;
+      margin-left:25vw;
+    }
+    .Logoadora{
+      width:50vw;
+    }
+    #loader{
+      width:15vw;
+      height:15vw;
+      border: 3vw solid #f3f3f3;
+      border-top:3vw solid #EEAB57;
+    }
+  }

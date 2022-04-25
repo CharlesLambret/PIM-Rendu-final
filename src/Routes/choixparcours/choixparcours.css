@@ -1,0 +1,53 @@
+#containerchoix{
+    display:flex;
+    flex-direction: column;
+    width: 30vw;
+    height:70vh;
+    margin-left:35vw;
+    justify-content:center;
+    align-items:center;
+    margin-top:15vh;
+    z-index:999;
+}
+#containerchoix h1{
+    margin-top:-3vh;
+}
+#btnadopter{
+    margin-top:4vh;
+    width:30vw;
+    background-color: #EBD082;
+    color: black;
+    Font-family: 'Montserrat', sans-serif, bold;
+}
+#btnceder{
+    margin-top:2vh;
+    width:30vw;
+    background-color: #B5D5DD;
+    color: black;
+    font-family: 'Montserrat', sans-serif, bold;
+}
+#Logochoix{
+    animation: none;
+}
+#decopattes{
+    width:50vw;
+    margin-left:50vw;
+    z-index:1;
+    margin-top:-115vh;
+}
+@media(max-width:800px){
+    #containerchoix{
+        width:70vw;
+        margin-left:15vw;
+        justify-content: flex-start;
+    }
+    #btnadopter, #btnceder{
+        width:50vw;
+        height: 10vw;
+    }
+    #decopattes{
+        width:100vw;
+        margin-left:0px;
+        margin-top:-40vh;
+    }
+}
